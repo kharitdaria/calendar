@@ -8,39 +8,38 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
+      background: #f4f6f8;
+      color: #1f2937;
     }
     .container {
       max-width: 1200px;
-      margin: 40px auto;
+      margin: 48px auto;
       padding: 0 20px;
     }
     h1 {
-      font-size: 34px;
+      font-size: 36px;
       margin-bottom: 8px;
     }
     p {
-      color: #94a3b8;
-      margin-bottom: 24px;
+      color: #6b7280;
+      margin-bottom: 28px;
     }
-    .calendar-wrapper {
-      background: #020617;
+    .calendar-card {
+      background: white;
       border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,.4);
+      box-shadow: 0 20px 40px rgba(0,0,0,.08);
       overflow: hidden;
     }
     iframe {
       width: 100%;
       height: 720px;
       border: none;
-      filter: invert(1) hue-rotate(180deg);
     }
     .btn {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 24px;
       padding: 14px 22px;
-      background: #6366f1;
+      background: #4f46e5;
       color: white;
       border-radius: 14px;
       text-decoration: none;
@@ -55,12 +54,11 @@
 
 <div class="container">
   <h1>Календарь событий</h1>
-  <p>Актуальные мероприятия и напоминания</p>
+  <p>Все важные мероприятия и напоминания</p>
 
-  <div class="calendar-wrapper">
+  <div class="calendar-card">
     <iframe
-      src="https://calendar.google.com/calendar/embed?src=11c520eb2dc6185c20a693b213463ba81b834984234a29a67a5fc76d3fbc8e80@group.calendar.google.com&ctz=Europe/Moscow&mode=MONTH&showTitle=0&showTabs=0&showCalendars=0&showPrint=0"
-      loading="lazy">
+      src="https://calendar.google.com/calendar/embed?src=11c520eb2dc6185c20a693b213463ba81b834984234a29a67a5fc76d3fbc8e80@group.calendar.google.com&ctz=Europe/Moscow&mode=MONTH&showTitle=0&showTabs=0&showCalendars=0&showPrint=0">
     </iframe>
   </div>
 
